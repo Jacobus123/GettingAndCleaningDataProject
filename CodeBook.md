@@ -2,6 +2,16 @@
 
 Description of the variables, the data, and any transformations or work that is being performed to clean up the data.
 
+###Functionality of script
+The 'run_analysis.R' performs the following:
+- Reading in input datasets from data directory
+- Merges the training and the test sets to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names. 
+- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
 ###Input Data Sets
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 
@@ -41,6 +51,27 @@ Description of the variables, the data, and any transformations or work that is 
 - Append combi_train and train_test into combi_data  
 - dcast_data: independent tidy data set with the average of each variable for each activity and each subject
 - write result dataset to file "step5_dataset.txt" 
+
+###Newly calculated variables 
+The mean and standard deviation for each measurement are contained in the following variables:
+- "MEAN_BODYACC_X"      Mean Body acceleration from the accelerometer on X-axis                
+- "SD_BODYACC_X"        SD   Body acceleration from the accelerometer on X-axis                
+- "MEAN_BODYACC_Y"      Mean Body acceleration from the accelerometer on Y-axis                
+- "SD_BODYACC_Y"        SD   Body acceleration from the accelerometer on Y-axis                
+- "MEAN_BODYACC_Z"      Mean Body acceleration from the accelerometer on Z-axis                
+- "SD_BODYACC_Z"        SD   Body acceleration from the accelerometer on Z-axis                
+- "MEAN_BODYGYRO_X"     Mean Triaxial Angular velocity from the gyroscope on X-axis               
+- "SD_BODYGYRO_X"       SD   Triaxial Angular velocity from the gyroscope on X-axis                
+- "MEAN_BODYGYRO_Y"     Mean Triaxial Angular velocity from the gyroscope on Y-axis                
+- "SD_BODYGYRO_Y"       SD   Triaxial Angular velocity from the gyroscope on Y-axis                
+- "MEAN_BODYGYRO_Z"     Mean Triaxial Angular velocity from the gyroscope on Z-axis                
+- "SD_BODYGYRO_Z"       SD   Triaxial Angular velocity from the gyroscope on Z-axis                
+- "MEAN_TOTACC_X"       Mean Triaxial acceleration from the accelerometer on X-axis               
+- "SD_TOTACC_X"         SD   Triaxial acceleration from the accelerometer on X-axis                
+- "MEAN_TOTACC_Y"       Mean Triaxial acceleration from the accelerometer on Y-axis                
+- "SD_TOTACC_Y"         SD   Triaxial acceleration from the accelerometer on Y-axis                
+- "MEAN_TOTACC_Z"       Mean Triaxial acceleration from the accelerometer on Z-axis                
+- "SD_TOTACC_Z"         SD   Triaxial acceleration from the accelerometer on Z-axis
 
 
 ###Output Data Set
